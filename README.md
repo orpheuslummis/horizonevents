@@ -1,1 +1,1 @@
-# horizonevents
+# Horizon Events website

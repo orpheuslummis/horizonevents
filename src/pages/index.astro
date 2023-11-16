@@ -1,0 +1,107 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Horizon Events',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Horizon Events"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact us',
+        href: 'mailto:team@horizonevents.info',
+        target: '_blank',
+        icon: 'tabler:mail',
+      },
+      { text: 'Learn more', href: '#about' },
+    ]}
+    image={{ src: '~/assets/images/horizonevents.png', alt: 'Horizon Events Image' }}
+  >
+    <Fragment slot="title">Events and tools empowering progress for the public good</Fragment>
+
+    <Fragment slot="subtitle">
+      We envision a future where people, organizations, and governments come together to solve the world’s most pressing
+      challenges.
+    </Fragment>
+
+    <!-- <Fragment slot="image">
+      <div class="relative h-0 pb-[56.25%]">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/dsTXcSeAZq8"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+          allowfullscreen
+          class="absolute top-0 left-0 w-full h-full"
+        >
+        </iframe>
+      </div>
+    </Fragment> -->
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    id="about"
+    title="About us"
+    subtitle="We believe in facilitating progress at the frontier of fields working on the public good. We realize events and build tools to benefit research communities. We have a global scope. We also provide event services and consulting. We believe in proactively providing our own events and tools whereever we see high impact not realized by others."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <Features2
+    title="What services do we provide?"
+    subtitle="We provide event services, consulting, and tooling for organizations and communities at the frontier of research."
+    items={[
+      {
+        title: 'Event services',
+        description:
+          'End-to-end event realization and consulting for various types of events, including conferences, workshops, and hackathons.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Tooling',
+        description: 'We provide software tools to help with events and research efforts.',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Strategy consulting',
+        description:
+          'We provide strategy consulting for organizations and communities at the frontier of research and the public good.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Contact',
+        href: 'mailto:team@horizonevents.info',
+        icon: 'tabler:mail',
+      },
+    ]}
+  >
+    <Fragment slot="title">Make progress</Fragment>
+
+    <Fragment slot="subtitle">Let us help with your event or research efforts. Reach out.</Fragment>
+  </CallToAction>
+</Layout>
