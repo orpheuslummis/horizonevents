@@ -6,7 +6,6 @@ site:
 
   googleSiteVerificationId: TBD
 
-# Default SEO metadata
 metadata:
   title:
     default: Horizon Events
@@ -18,14 +17,14 @@ metadata:
   openGraph:
     site_name: Horizon Events
     images:
-      - url: '~/assets/images/default.png'
+      - url: ''
         width: 1200
         height: 628
     type: website
-  twitter:
-    handle: '@TBD'
-    site: '@TBD'
-    cardType: summary_large_image
+  # twitter:
+  #   handle: '@TBD'
+  #   site: '@TBD'
+  #   cardType: summary_large_image
 
 i18n:
   language: en
