@@ -1,5 +1,7 @@
 ---
+import Footer from '~/components/widgets/Footer.astro';
 import Layout from '~/layouts/Layout.astro';
+import { footerData } from '~/navigation';
 
 import type { MetaData } from '~/types';
 
@@ -20,7 +22,7 @@ const { metadata } = Astro.props;
   <main>
     <slot />
   </main>
-  <!-- <slot name="footer">
+  <slot name="footer">
     <Footer {...footerData} />
-  </slot> -->
+  </slot>
 </Layout>

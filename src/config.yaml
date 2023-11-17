@@ -21,10 +21,10 @@ metadata:
         width: 1200
         height: 628
     type: website
-  # twitter:
-  #   handle: '@TBD'
-  #   site: '@TBD'
-  #   cardType: summary_large_image
+  twitter:
+    handle: '@HorizonEventsNP'
+    site: '@HorizonEventsNP'
+    cardType: summary_large_image
 
 i18n:
   language: en
